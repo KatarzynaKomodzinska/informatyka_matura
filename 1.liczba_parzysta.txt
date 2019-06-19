@@ -1,0 +1,26 @@
+﻿Zadanie 1. Czy liczba jest parzysta?
+
+Liczba jest parzysta, jeżeli dzieli się przez 2. Innym sposobem rozpoznania
+jest sprawdzenie ostatniej jej cyfry — musi to być 0, 2, 4, 6 albo 8.
+Jeżeli podana liczba jest większa od 1, to możemy odejmować od niej liczbę 2
+tak długo, aż uzyskamy 0 albo 1 i w ten sposób rozstrzygniemy o parzystości.
+Sprawdź, czy podana liczba naturalna jest liczbą parzystą.
+
+Rozwiązanie
+
+Operator % (C++,  Python)
+wyznacza resztę z dzielenia dwóch liczb całkowitych.
+
+cpp
+bool z1(int n)
+{
+return n % 2 == 0;
+}
+
+
+py
+def z1(n):
+return n % 2 == 0
+Możemy też sprawdzić, czy ostatnia cyfra w zapisie bitowym liczby to 0.
+def z1(n):
+return n & 1 == 0
